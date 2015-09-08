@@ -11,4 +11,8 @@ describe('leapYear', function() {
     expect(leapYear(1900)).to.equal(false);
   });
 
+  it('is true for years that are divisible by 400', function() {
+    expect(leapYear(4000)).to.equal(true);
+  });
+
 });
