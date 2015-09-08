@@ -5,13 +5,13 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/script.js"></script>
-    <title>Leap year detector</title>
+    <title>Triangle Tracker</title>
   </head>
   <body>
     <div class="container">
       <h1>Triangle Tracker</h1>
 
-      <form id="leap-year">
+      <form id="triangle-tracker">
         <div class="form-group">
           <label for="side1">Side 1: </label>
           <input id="side1" type="text">
@@ -22,14 +22,14 @@
         </div>
         <div class="form-group">
           <label for="side3">Side 3: </label>
-          <input id="side3 " type="text">
+          <input id="side3" type="text">
         </div>
 
         <button type="submit" class="btn">Find out!</button>
       </form>
 
       <div id="result">
-        <p>That is a(n) <span class="triangle"></span> triangle.</p>
+        <p>That is a(n) <span id="triangle"></span> triangle.</p>
       </div>
     </div>
   </body>
