@@ -16,7 +16,12 @@
 // });
 
 var triangleTracker = function(side1, side2, side3) {
-  if (side1 === side2 && side2 === side3) {
+
+  if (side1 + side2 < side3 || side2 + side3 < side1 || side3 + side1 < side2){
+    return "Not a Triangle";
+  }
+
+  else if (side1 === side2 && side2 === side3) {
     return "Equilateral";
   }
 
@@ -24,14 +29,9 @@ var triangleTracker = function(side1, side2, side3) {
     return "Isosceles";
   }
 
-  else if (side1 <= side2 + side3 || side2 <= side1 + side3 || side3 <= side1 + side2) {
+  else {
     return "Scalene";
   }
-
-  else {
-    return "Not a Triangle";
-  }
-
 };
 
 $(document).ready(function() {
