@@ -1,10 +1,10 @@
-# JavaScript Leap Year 
+# JavaScript Triangle Tracker
 
-##### Leap Year finder, 9/8/15
+##### Triangle Tracker, 9/8/15
 
 #### By **Josue Valverde and Bunker**
 
-## This program allows a user to enter a year to discover if it is a leap year or not.
+## This program allows a user to enter a year to discover what type of triangle an input is.
 
 
 ## Created using JavaScript and HTML
